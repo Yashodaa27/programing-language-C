@@ -1,0 +1,33 @@
+#include &lt;stdio.h&gt;
+int main()
+{
+int choice;
+float a, b;
+printf(&quot;1. Addition\n&quot;);
+printf(&quot;2. Subtraction\n&quot;);
+printf(&quot;3. Multiplication\n&quot;);
+printf(&quot;4. Division\n&quot;);
+printf(&quot;Enter your choice: &quot;);
+scanf(&quot;%d&quot;, &amp;choice);
+
+printf(&quot;Enter two numbers: &quot;);
+scanf(&quot;%f %f&quot;, &amp;a, &amp;b);
+switch(choice)
+{
+case 1:
+printf(&quot;Result = %.2f&quot;, a + b);
+break;
+case 2:
+printf(&quot;Result = %.2f&quot;, a - b);
+break;
+case 3:
+printf(&quot;Result = %.2f&quot;, a * b);
+break;
+case 4:
+printf(&quot;Result = %.2f&quot;, a / b);
+break;
+default:
+printf(&quot;Invalid choice&quot;);
+}
+return 0;
+}
